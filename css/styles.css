@@ -1,0 +1,157 @@
+/* Body */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box; /* mostrar con el aside*/
+}
+body {
+  margin: auto;
+  width: 80vw;
+  box-sizing: border-box;
+}
+
+/* Header */
+.page-header {
+  position: sticky;
+  top: 0;
+  height: 200px;
+  background-color: white;
+  background-image: url("../assets/images/header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2em 0;
+  text-align: end;
+}
+.page-header h1 {
+  font-family: "Chewy", cursive;
+  margin: 0.7rem 0;
+  font-size: 3rem;
+}
+.page-header p {
+  display: inline-block;
+  font-size: 1.2rem;
+  max-width: 40ch;
+}
+
+/* Navbar */
+nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 4rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0),
+    rgba(210, 255, 240, 0.8)
+  );
+}
+ul {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  width: 10ch;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Chewy", cursive;
+  line-height: 4rem;
+  color: black;
+}
+li:hover {
+  background-color: slategray;
+}
+li:hover a {
+  color: white;
+}
+
+/* Aside */
+aside {
+  width: 25%;
+  min-height: 100vh;
+  margin: 10em 0 1em 1em;
+  padding: 1em;
+  background: rgba(210, 255, 240, 0.8);
+  float: right;
+}
+
+/* Main */
+main {
+  width: 70%;
+  padding: 1em;
+}
+main .main-article header {
+  margin: 2em 0;
+  text-align: center;
+}
+main .main-article header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+main .main-article header p {
+  font-size: 1rem;
+  margin-bottom: 3em;
+}
+
+main .main-article p {
+  margin-bottom: 1em;
+}
+main .main-article figure {
+  float: right;
+  text-align: center;
+  padding: 1em;
+}
+main .main-article figure img {
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px;
+}
+
+article footer {
+  background-color: slategray;
+  padding: 0 1em;
+  color: white;
+  height: 3rem;
+}
+.author,
+.social {
+  display: inline-block;
+  padding: 0.5rem 0;
+  width: 200px;
+}
+
+.social {
+  float: right;
+}
+.social svg {
+  margin-right: 0.5em;
+  cursor: pointer;
+  transition-property: transform, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+.social svg:hover {
+  color: black;
+
+  transform: rotateY(180deg);
+}
+
+.parallax {
+  margin: 20rem 0;
+  background-image: url("../assets/images/parallax-cat-01gif.gif");
+  min-height: 1080px;
+  background-attachment: fixed;
+  background-position: start;
+
+  background-size: 1080px;
+}
